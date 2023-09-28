@@ -115,7 +115,7 @@ p {
 
 .main-btn {
   display: inline-block;
-  padding: 0.625rem 1.875rem;
+  padding: 0.625rem 1.7rem;
   line-height: 1.5625rem;
   background-color: var(--primary-color);
   border: 0.1875rem solid var(--primary-color);
@@ -213,10 +213,7 @@ p {
   margin-left: 0.625rem;
 }
 
-.border-success {
-  --bs-border-opacity: 0.5;
-  border-color: red !important;
-}
+
 
 /* navigation change on scolling */
 .navigation-wrap.scoll-on {
@@ -225,7 +222,7 @@ p {
   left: 0;
   width: 100%;
   background: var(--white-color);
-  box-shadow: 0 0.125rem 1.175rem 0 rgb(0, 0, 0, 0.9);
+  box-shadow: 0 0.125rem 1.7rem 0 rgb(0, 0, 0, 0.3 );
   transition: all 0.15s ease-in-out 0s;
 }
 
@@ -250,4 +247,49 @@ p {
 .counter-section p {
   color: var(--white-color);
   text-transform: uppercase;
+}
+
+.show{
+  transition: all 200ms linear;
+}
+/* Media query */
+@media (max-width : 992px){
+
+  
+  /* custom class  */
+  .text-content {
+    width: 100%;
+  }
+
+  .navigation-wrap .navbar-brand img{
+    height: 3.8125rem;
+  }
+
+  .navigation-wrap {
+    background-color: var(--white-color);
+    text-align: center;
+  }
+
+  .navigation-wrap .nav-link{
+    line-height: 2rem;
+  }
+
+  .top-banner{
+    padding: 9.99855rem 0 9.375rem;
+  }
+}
+
+@media(max-width:767px){
+  h1{
+    font-size:2.8rem;
+  }
+  h2{
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .top-banner{
+    padding: 10.99855rem 0 9.375rem;
+  }
+
 }
