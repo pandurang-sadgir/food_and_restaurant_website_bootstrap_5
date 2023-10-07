@@ -213,8 +213,6 @@ p {
   margin-left: 0.625rem;
 }
 
-
-
 /* navigation change on scolling */
 .navigation-wrap.scoll-on {
   position: fixed;
@@ -222,7 +220,7 @@ p {
   left: 0;
   width: 100%;
   background: var(--white-color);
-  box-shadow: 0 0.125rem 1.7rem 0 rgb(0, 0, 0, 0.3 );
+  box-shadow: 0 0.125rem 1.7rem 0 rgb(0, 0, 0, 0.3);
   transition: all 0.15s ease-in-out 0s;
 }
 
@@ -249,19 +247,59 @@ p {
   text-transform: uppercase;
 }
 
-.show{
+.show {
   transition: all 200ms linear;
 }
-/* Media query */
-@media (max-width : 992px){
 
-  
+/* about section  */
+
+.about-section {
+  background-color: var(--white-color);
+  padding-top: 9rem; 
+}
+
+.about-section ul li {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 3.5rem;
+  margin-left: 3rem;
+  position: relative;
+}
+
+.about-section ul li:before {
+  position: absolute;
+  color: var(--primary-color);
+  left: -2.805rem;
+  font-size: 1.25rem;
+  /* Below of this code is mandatory to add fontawesome uncode */
+  font-weight: 900;
+  font-family: "Font Awesome\ 5 Free";
+  content: "\f00c";
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.story-section {
+  width: 100%;
+  height: 30rem;
+  background-image: url("../images/bg/bg-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.story-section-content {
+  /* width: 100%  ; */
+  height: 100%;
+}
+
+/* Media query */
+@media (max-width: 992px) {
   /* custom class  */
   .text-content {
     width: 100%;
   }
 
-  .navigation-wrap .navbar-brand img{
+  .navigation-wrap .navbar-brand img {
     height: 3.8125rem;
   }
 
@@ -270,26 +308,31 @@ p {
     text-align: center;
   }
 
-  .navigation-wrap .nav-link{
+  .navigation-wrap .nav-link {
     line-height: 2rem;
   }
 
-  .top-banner{
+  .top-banner {
     padding: 9.99855rem 0 9.375rem;
   }
+
+  /* about section */
+  .about-section {
+    padding-top: 7rem; 
+  }
+
 }
 
-@media(max-width:767px){
-  h1{
-    font-size:2.8rem;
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2.8rem;
   }
-  h2{
+  h2 {
     font-size: 2rem;
     line-height: 2rem;
   }
 
-  .top-banner{
+  .top-banner {
     padding: 10.99855rem 0 9.375rem;
   }
-
 }
