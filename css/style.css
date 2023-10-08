@@ -292,6 +292,32 @@ p {
   height: 100%;
 }
 
+/* explore food  */
+.explore-food-section .card {
+  border: none;
+  background-color: transparent;
+  border-radius: 0.7558rem;
+}
+
+.explore-food-section img {
+  border-radius:0.9374rem;
+  object-fit: cover;
+} 
+
+.explore-food-section span {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  padding-bottom: 1rem;
+  border-bottom: 0.06544 solid #eee;
+}
+
+.explore-food-section .card span del {
+  color: var(--text-grey);
+  margin-left: 0.5rem;
+} 
+
 /* Media query */
 @media (max-width: 992px) {
   /* custom class  */
