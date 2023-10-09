@@ -88,7 +88,7 @@ h2 {
 }
 
 h4 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 800;
   text-transform: capitalize;
   font-family: var(--secondary-font);
@@ -322,6 +322,10 @@ p {
   background-color: var(--primary-color);
 }
 
+.testimonial-section h2 {
+  color: #fff;
+}
+
 .testimonial-section .carousel-inner {
   margin-top: 2rem;
   border: none;
@@ -332,10 +336,8 @@ p {
 .testimonial-section .carousel-inner .carousel-item {
   padding: 5rem 3.125rem;
   background-color: var(--white-color);
-  border-radius: 0.9375rem;
   text-align: center;
   align-items: center;
-  object-fit: cover;
 }
 
 .testimonial-section .carousel-item .carousel-img {
@@ -383,35 +385,56 @@ p {
   opacity: 1;
 }
 
-/* .testimonial-section .carousel-item {
-  margin-top: 3rem;
-  padding: 5rem 3.125rem;
-  background-color: var(--white-color);
-  border-radius: 0.9375rem;
-  border: 0.1rem blue solid;
-  text-align: center;
-  /* align-items: center; */
-/* } */
-
-/* .carousel-control {
-  background-image: none !important;
-} */
-/* .testimonial-section .carousel-item img {
-  max-width: 6rem;
-  border-radius: 50%;
-  border: 0.1rem var(--text-grey) dotted;
-  padding: 0.3125rem;
+/* FAQ section */
+.faq-content h4 span {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-right: 1.2rem;
 }
 
-.testimonial-section .carousel-item .carousel-caption p {
-  font-size: 1.3125rem;
-  line-height: 2.035rem;
-  padding: 0 11% 0.625rem;
+/* paralex web */
+.paralex-content {
+  width: 100%;
+  /* height: 20vh; */
+  background-image: url("../images/bg/bg-3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0 7.1rem;
+  padding: 4rem 0;
 }
 
-.testimonial-section .carousel-item .carousel-caption {
-  margin-top: 13rem;
-} */
+.paralex-content h2 {
+  color: var(--white-color);
+}
+
+/* newsletter form  */
+.newslatter-section .newsletter {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.newsletter .form-control {
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 100%;  
+  padding:1.5rem 1.25rem  !important;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  border: 0.1rem solid var(--text-grey);
+  color: var(--black-color);
+  font-weight: 700;
+}
+
+.newsletter .form-control:focus,
+.newsletter .form-control:hover {
+  outline: none;
+  box-shadow: none;
+  border-color: var(--primary-color);
+}
 /* Media query */
 @media (max-width: 992px) {
   /* custom class  */
@@ -462,6 +485,14 @@ p {
   .testimonial-section .carousel-inner .carousel-item {
     padding: 7rem 3.125rem;
   }
+
+  .newslatter-section .newsletter {
+    width: 85%;
+    /* margin: 0 auto; */
+  }
+  .newslatter-section .newsletter .main-btn{
+    width: 100%;
+  }
 }
 
 @media (max-width: 320px) {
@@ -470,5 +501,10 @@ p {
   } */
   .testimonial-section .carousel-item .carousel-caption p {
     margin: -0.1rem 0;
+  }
+
+  .newslatter-section .newsletter {
+    width: 90%;
+    /* margin: 0 auto; */
   }
 }
